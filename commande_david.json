@@ -1,0 +1,33 @@
+{
+    "items": [
+        {
+            "id": "45639d1c-b758-43b5-aa8d-a7e1190ebb0f",
+            "uuid": "1750158057176",
+            "qty": 2,
+            "extras": [
+                {
+                    "option_id": "d6218a93-8f20-4499-a5d6-e3c49c0333a7",
+                    "selection": {
+                        "id": 1695216023306,
+                        "name": {
+                            "en": "Sans sel",
+                            "fr": "Sans sel",
+                            "nl": "Sans sel"
+                        },
+                        "price": {},
+                        "active": true
+                    },
+                    "qty": 1
+                }
+            ],
+            "comment": ""
+        },
+        {
+            "id": "a7ffd2d2-f988-4ab6-a72f-4c6b29d4a507",
+            "uuid": "1750158065994",
+            "qty": 1,
+            "extras": [],
+            "comment": ""
+        }
+    ]
+}
