@@ -11,9 +11,21 @@
 (function () {
     'use strict';
 
+    const createBags = () => {
+        const newCart = {
+            value: [
+                {
+                    id: 'b5ce1d14-b4b4-493c-846b-eaab8a464240',
+                    items: [],
+                },
+            ],
+        };
+        localStorage.setItem('bags', JSON.stringify(newCart));
+    };
+
     const doesCartOrderAlreadyExists = () => {
         const cartRaw = localStorage.getItem('bags');
-        if (!cartRaw) return;
+        if (!cartRaw) return false;
 
         try {
             const cart = JSON.parse(cartRaw);
@@ -50,7 +62,7 @@
         localStorage.setItem('bags', JSON.stringify(cart));
     };
 
-    if (doesCartOrderAlreadyExists()) return;
+    if (!doesCartOrderAlreadyExists()) createBags();
     const orderFromUrl = getJsonOrderFromUrl();
     injectOrder(orderFromUrl);
 })();
