@@ -11,11 +11,13 @@
 (function () {
     'use strict';
 
+    const placeId = 'b5ce1d14-b4b4-493c-846b-eaab8a464240';
+
     const createBags = () => {
         const newCart = {
             value: [
                 {
-                    id: 'b5ce1d14-b4b4-493c-846b-eaab8a464240',
+                    id: placeId,
                     items: [],
                 },
             ],
